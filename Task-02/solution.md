@@ -1,3 +1,4 @@
+
 # 1.Variables and Data Types
 
 ## Assignment
@@ -10,3 +11,77 @@
 > 3. NaN(Not a Number) is not equal to itself and if we use isNaN("") or isNaN([]) then javascript coerces them into number data type and then return true.
 > 4. When new array is created it is created with empty items so we need to manually intialize it. 
 > 5. 0.1+0.2 !==0.3 as java using floating-point arithemetic so leads to precision errors. 
+
+
+# 2.functions-methods
+
+## Assignment
+> Function with no return:
+```
+ function name(){
+ 	console.log("Sathvik");
+ 	}
+ name();
+```
+> Function with return:
+```
+function name(s){
+	   return s;
+	 }
+ name("Sathvik");
+``` 
+> Function with mixed parameters
+```
+function Details(name,age=0){
+	  return {age,name};
+	}
+	Details("Sathvik");
+Output:
+Object { age: 0, name: "Sathvik" }
+```
+# 3.Making-decision
+
+## Assingment
+
+> Function performs set of tasks but method performs a set of tasks that are associated with an object.
+```
+const allStudents = [
+  'A',
+  'B-',
+  1,
+  4,
+  5,
+  2
+]
+
+let studentsWhoPass = [];
+function pass(s){
+  if(typeof s =="number" && s>2){
+ 		   studentsWhoPass.push(s);
+  }
+	else if(typeof s == "string" && s!== 'C-'){
+    studentsWhoPass.push(s)
+  }
+}
+allStudents.forEach(pass);
+console.log(studentsWhoPass);
+```
+### Challenge
+> Function with if .. else:
+```
+function check(s){
+  if(s === 200){
+    return 1
+  }
+	else{
+    return 0
+  }
+}
+check(150)
+```
+>Function with ternary operator
+```
+let a=200
+const c = a === 200 ? 1:0; 
+console.log(c);
+```
