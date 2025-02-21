@@ -31,6 +31,7 @@ function name(s){
  name("Sathvik");
 ``` 
 > Function with mixed parameters
+
 ```
 function Details(name,age=0){
 	  return {age,name};
@@ -84,4 +85,21 @@ check(150)
 let a=200
 const c = a === 200 ? 1:0; 
 console.log(c);
+```
+# 4.Arrays-loops
+
+### Assignment
+ ```
+
+let arr=[]
+for(let i=1;i<20;i++){
+        if(i%3 === 0){
+      arr.push(i);
+    }… 
+```
+### Challenge
+
+```
+let arr=[1,23,4,45,6,7,8];
+arr.forEach((element)=>console.log(element)); 
 ```
